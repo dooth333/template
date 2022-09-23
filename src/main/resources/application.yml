@@ -1,0 +1,12 @@
+github:
+  bucket:
+    # 配置仓库所属的用户名（如果是自己创建的，就是自己的用户名）
+    user: "dooth333"
+    # 配置仓库名称
+    repository: "template-Image"
+    # 配置自己的acccessToken
+    access-token: "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"
+    url: "https://cdn.jsdelivr.net/gh/${github.bucket.user}/${github.bucket.repository}/"
+    api: "https://api.github.com/repos/${github.bucket.user}/${github.bucket.repository}/contents/"
+
+

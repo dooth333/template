@@ -1,0 +1,293 @@
+@charset "utf-8";
+/* CSS Document */
+/* common */
+html{
+	height: 100%;
+}
+body, html {
+	background: #fff;
+	font: normal 12px/120% "微软雅黑";
+	margin: 0;
+	padding: 0px;
+	height:100%;
+}
+div, form, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, span, p, pre, img {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	
+}
+ul, ol, li {
+	list-style: none;
+}
+table, td, th, input, select {
+	font-size: 12px;
+	padding: 0;
+}
+a:link, a:visited {
+	color: #000;
+	text-decoration: none;
+	outline: none;
+	star:expression(this.onFocus=this.blur());
+}
+a:hover, a:active {
+	color: #c00;
+}
+.fl {
+	zoom: 1;
+}
+.fl:after {
+	content: "";
+	display: block;
+	height: 0;
+	line-height: 0;
+	clear: both;
+	visibility: hidden;
+}
+select{
+	width:100px;}
+
+/* position */
+.nbl {
+	background: url(/images/navigatingbar.gif) 0 0 no-repeat;
+	padding: 0 0 0 30px;
+}
+.nbr {
+	background: url(/images/navigatingbar.gif) right 0 no-repeat;
+	padding: 0 10px 0 0;
+}
+.navbar {
+	background: url(/images/navigatingbar.gif) 0 -30px repeat-x;
+	line-height: 30px;
+	white-space:nowrap;
+	overflow:hidden;
+	width:100%;
+	word-break:keep-all;
+}
+/* datail table & formtable */
+.detail, .formtable {
+	width: 98%;
+	border-collapse: collapse;
+	border: 0;
+	border-spacing: 0;
+	margin: 0 auto;	
+	margin-top: 0.5em;
+}
+.detail caption, .formtable caption {
+	background: url(/images/thead.gif) right 0 no-repeat;
+	line-height: 30px;
+	position: relative;
+	padding: 0 10px 0 0;
+}
+.detail caption div.outer, .formtable caption div.outer {
+	background: url(/images/thead.gif) 0 -30px no-repeat;
+	padding: 0 0 0 34px;
+	height:30px;
+}
+.detail caption div.inner, .formtable caption div.inner {
+	background: url(/images/thead.gif) 0 -90px repeat-x;
+	position: relative;
+	height:30px;
+}
+.detail caption strong, .formtable caption strong {
+	background: url(/images/thead.gif) right -60px no-repeat;
+	display: block;
+	float: left;
+	font: bold 14px/28px "";
+	color: #fff;
+	padding: 2px 40px 0 0;
+}
+
+.headsearch {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 20px;
+	padding: 4px 0 0 0;
+	font: 12px/20px "";
+	color: #000;
+}
+.headsearch .button, .headsearch button {
+	padding: 0 4px 0 4px;
+	float: left;
+	margin: 0 3px 0 0;
+}
+.detail thead td, .detail thead th, .detail tbody th {
+	background: #ddd url(/images/deatail_thead_bg.gif) 0 0 repeat-x;
+	font: normal 12px/23px "";
+	text-align: center;
+	border: 1px solid #aaa;
+}
+.hnb thead td {
+	background-image: none;
+}
+.detail thead span {
+	float: right;
+	margin: 0 0.5em 0 0;
+}
+.detail tbody td {
+	/*background: #f9f9f9;*/
+	line-height: 23px;
+	border: 1px solid #ccc;
+	text-align: center;
+}
+.detail tbody tr.trOdd td {
+	background: #f1f1f1;
+}
+.detail tbody tr.trOver td {
+	background: #fef3d1;
+}
+.detail tfoot tr {
+	background: #ffe4c1;
+}
+.detail tfoot tr td, .formtable tfoot tr td {
+	line-heigt: 27px;
+	height: 27px;
+	text-align: right;
+	padding: 0 8px 0 0;
+	border: 1px solid #ffe4c1;
+}
+.detail td.tal, .formtable td.tal {
+	text-align: left;
+	padding-left: 3px;
+}
+.detail td.tac, .formtable td.tac {
+	text-align: center;
+}
+.detail td.tar, .formtable td.tar {
+	text-align: right;
+	padding-right: 3px;
+}
+.detail td.tione, .formtable td.tione {
+	text-indent: 0em;
+}
+.detail td.titwo, .formtable td.titwo {
+	text-indent: 1em;
+}
+.detail td.tithree, .formtable td.tithree {
+	text-indent: 2em;
+}
+.detail td.tifour, .formtable td.tifour {
+	text-indent: 3em;
+}
+.detail td.tifive, .formtable td.tifive {
+	text-indent: 4em;
+}
+.detail thead td.bbn {
+	border-bottom: none;
+}
+.detail thead td.btln {
+	border-top: none;
+	border-right: none;
+}
+.detail tbody td a:link, .detail tbody td a:visited, .detail tfoot td a:link, .detail tfoot td a:visited  {
+	color: #009;
+	text-align: center;
+}
+.detail tbody td a:hover, .detail tbody td a:active, .detail tfoot td a:hover, .detail tfoot td a:active {
+	color: #c00;
+	text-decoration: none;
+}
+.formtable tbody th {
+	background: #ddd url(/images/formtable_th.gif) 0 0 repeat-y;
+	border: 1px solid #ccc;
+	text-align: center;
+	font-family:"微软雅黑";
+}
+.formtable tbody td {
+	/*background: #fff;*/
+	line-height: 25px;
+	height: 25px;
+	border: 1px solid #ccc;
+	text-align: left;
+	padding-left: 0.3em;
+}
+.formtable tbody td span {
+	color: #c00;
+}
+.formtable tfoot tr {
+	background: #ffe4c1;
+}
+.formtable tfoot tr td {
+	text-align: center;
+}
+.hleft {
+	float: left;
+	margin-top: 0.5em;
+}
+.htwo {
+	float: left;
+	width: 48.8%;
+	margin: 0 0.4% 0 0;
+}
+.hthere {
+	float: left;
+	width: 32.5%;
+	margin: 0 0.25% 0 0;
+}
+/* detail sub table */
+.detail td table td {
+	border: none;
+}
+/* tab menu */
+.tabhead {
+	background: url(/images/tab_l1_bg.gif) 0 0 repeat-x;
+	padding: 0 0 0 8px;
+	margin: 5px 0 0 0;
+}
+.tabhead li {
+	float: left;
+	display: inline;
+	margin: 0 2px 0 0;
+	background: url(/images/l_menu.gif) 0 0 no-repeat;
+	padding: 0 0 0 8px;
+	font: 12px/25px "";
+}
+.tabhead li a:link, .tabhead li a:visited {
+	background: url(/images/r_menu.gif) right 0 no-repeat;
+	display: block;
+	padding: 0 8px 0 0;
+}
+.tabhead li.active {
+	background-position: 0 -25px;
+
+}
+.tabhead li.active a:link, .tabhead li.active a:visited {
+	background-position: right -25px;
+	color: #fff;
+} 
+.tabcontent {
+	background: url(/images/tab_l2_bg.gif) 0 0 repeat-x;
+	border: 1px solid #8d0100;
+	border-top: none;
+	height: 29px;
+}
+.tabcontent ul {
+	display:none;
+	padding: 0 0 0 8px;
+}
+.tabcontent ul li{
+	display:block;
+	background: url(/images/tab_l2_al.gif) 0 0 no-repeat;
+	float: left;
+	line-height: 29px;
+	padding: 0 0 0 8px;
+}
+.tabcontent ul li a:link, .tabcontent ul li a:visited {
+	background: url(/images/tab_l2_ar.gif) 0 0 no-repeat;
+	color: #fff;
+	display: block;
+	padding: 0 8px 0 0;
+}
+.tabcontent ul li.active {
+	background-position: 0 -29px;
+}
+.tabcontent ul li.active a:link, .tabcontent ul li.active a:visited {
+	background-position: right -29px;
+}
+ul.active {
+	display: block;
+}
+.hidden{
+	display:none;
+}
